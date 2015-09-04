@@ -1,0 +1,2 @@
+---- readShort Matches (1 in 1 files) ----
+Protocol.c (src):short readShort(uint8_t *argv,int idx,boolean ignore_high)

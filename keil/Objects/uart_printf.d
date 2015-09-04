@@ -24,3 +24,6 @@
 .\objects\uart_printf.o: ..\Library\StdDriver\inc\acmp.h
 .\objects\uart_printf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\uart_printf.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\uart_printf.o: ..\inc\protocol.h
+.\objects\uart_printf.o: ..\inc\mygpio.h
+.\objects\uart_printf.o: ..\inc\sysinit.h

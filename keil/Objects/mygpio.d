@@ -22,3 +22,4 @@
 .\objects\mygpio.o: ..\Library\StdDriver\inc\uart.h
 .\objects\mygpio.o: ..\Library\StdDriver\inc\hdiv.h
 .\objects\mygpio.o: ..\Library\StdDriver\inc\acmp.h
+.\objects\mygpio.o: ..\inc\sysinit.h

@@ -25,4 +25,5 @@
 .\objects\mergbled.o: ..\Library\StdDriver\inc\hdiv.h
 .\objects\mergbled.o: ..\Library\StdDriver\inc\acmp.h
 .\objects\mergbled.o: ..\inc\mygpio.h
+.\objects\mergbled.o: ..\inc\sysinit.h
 .\objects\mergbled.o: ..\inc\systime.h

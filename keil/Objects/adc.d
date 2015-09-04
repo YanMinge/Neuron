@@ -1,6 +1,5 @@
 .\objects\adc.o: ..\src\main.c
-.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\adc.o: ..\inc\uart_printf.h
+.\objects\adc.o: ..\inc\sysinit.h
 .\objects\adc.o: ..\Library\Device\Nuvoton\M051Series\Include\M051Series.h
 .\objects\adc.o: ..\Library\CMSIS\Include\core_cm0.h
 .\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -23,6 +22,12 @@
 .\objects\adc.o: ..\Library\StdDriver\inc\uart.h
 .\objects\adc.o: ..\Library\StdDriver\inc\hdiv.h
 .\objects\adc.o: ..\Library\StdDriver\inc\acmp.h
-.\objects\adc.o: ..\inc\systime.h
-.\objects\adc.o: ..\inc\MeRGBLed.h
+.\objects\adc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adc.o: ..\inc\uart_printf.h
 .\objects\adc.o: ..\inc\mygpio.h
+.\objects\adc.o: ..\inc\protocol.h
+.\objects\adc.o: ..\inc\systime.h
+.\objects\adc.o: ..\inc\MePwm.h
+.\objects\adc.o: ..\inc\Interrupt.h
+.\objects\adc.o: ..\inc\dataflash.h
+.\objects\adc.o: ..\inc\smartservo.h

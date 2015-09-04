@@ -43,24 +43,24 @@ ARM Macro Assembler    Page 1
    26 00000400         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
    27 00000400         ; </h>
    28 00000400         
-   29 00000400 00000400 
+   29 00000400 00000100 
                        Heap_Size
-                               EQU              0x00000400
+                               EQU              0x00000100
    30 00000400         
    31 00000400                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
 3
    32 00000000         __heap_base
    33 00000000         Heap_Mem
                                SPACE            Heap_Size
-   34 00000400         __heap_limit
-   35 00000400         
-   36 00000400         
-   37 00000400                 PRESERVE8
-   38 00000400                 THUMB
-   39 00000400         
-   40 00000400         
-   41 00000400         ; Vector Table Mapped to Address 0 at Reset
-   42 00000400                 AREA             RESET, DATA, READONLY
+   34 00000100         __heap_limit
+   35 00000100         
+   36 00000100         
+   37 00000100                 PRESERVE8
+   38 00000100                 THUMB
+   39 00000100         
+   40 00000100         
+   41 00000100         ; Vector Table Mapped to Address 0 at Reset
+   42 00000100                 AREA             RESET, DATA, READONLY
    43 00000000                 EXPORT           __Vectors
    44 00000000         
 
@@ -335,10 +335,11 @@ ARM Macro Assembler    Page 6
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=.\object
-s\startup_m051series.d -o.\objects\startup_m051series.o -ID:\Keil_v5\ARM\RV31\I
-NC -ID:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="
-__UVISION_VERSION SETA 513" --list=.\listings\startup_m051series.lst startup_M0
-51Series.s
+s\startup_m051series.d -o.\objects\startup_m051series.o -IE:\2015\Neuron_servo\
+keil\RTE -ID:\Keil_v5\ARM\PACK\Nuvoton\NuMicro_DFP\1.0.4\Device\M051\Include -I
+D:\Keil_v5\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefine="__UVI
+SION_VERSION SETA 513" --list=.\listings\startup_m051series.lst startup_M051Ser
+ies.s
 
 
 
@@ -401,7 +402,7 @@ Symbol: __heap_base
    Uses
       At line 238 in file startup_M051Series.s
 Comment: __heap_base used once
-__heap_limit 00000400
+__heap_limit 00000100
 
 Symbol: __heap_limit
    Definitions
@@ -739,7 +740,7 @@ Symbol: WDT_IRQHandler
 ARM Macro Assembler    Page 1 Alphabetic symbol ordering
 Absolute symbols
 
-Heap_Size 00000400
+Heap_Size 00000100
 
 Symbol: Heap_Size
    Definitions
